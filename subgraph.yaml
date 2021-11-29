@@ -1,0 +1,22 @@
+specVersion: 0.0.1
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: CorruptionsDeviationRegistry
+    network: mainnet
+    source:
+      address: "0x40f7ad19c7F37AcD76958d61Cbc783c77411cd9b"
+      abi: CorruptionsDeviationRegistry
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+
+      abis:
+        - name: CorruptionsDeviationRegistry
+          file: ./abis/CorruptionsDeviationRegistry.json
+      eventHandlers:
+
+      file: ./src/mapping.ts
