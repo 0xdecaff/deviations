@@ -1,0 +1,8 @@
+type DeviationInfo @entity {
+  id: ID!
+  created: BigInt!
+  index: BigInt!
+  name: String!
+  contractAddress: String!
+  extraData: BigInt!
+}
